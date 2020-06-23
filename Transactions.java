@@ -20,7 +20,6 @@ public class Transactions {
             public void run() {
                 account.setTotal(account.getTotal() - value);
                 // sends the user
-                //event.onSuccess(account);
                 event.onComplete(account);
             }
         }, time);
